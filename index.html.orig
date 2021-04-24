@@ -1,4 +1,3 @@
-<!doctype html>
 <script>
     var Theme_number = 1;
     var Default_theme = 1;
@@ -52,11 +51,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/css.style1.css">
+    <link rel="stylesheet/less" type="text/css" href="less/less.style1.less">-->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
           media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<<<<<<< HEAD
+    <title>Web</title>
+||||||| 725cb76
+    <title>Web Bootstrap</title>
+=======
     <title>Lab3 Git і GitHub</title>
+>>>>>>> master
 </head>
 <body>
 
@@ -97,6 +104,12 @@
                             Зворотній зв'язок
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="less-tab" data-toggle="tab" href="#less" role="tab"
+                           aria-controls="less" aria-selected="false">
+                            Less
+                        </a>
+                    </li>
                 </ul>
                 <ul class="nav  ml-auto">
                     <li class="nav-item">
@@ -109,7 +122,7 @@
         </nav>
     </div>
 </header>
-<h1>Робота з GitHub</h1>
+
 <div class="container">
     <div class="tab-content">
         <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -279,7 +292,6 @@
                 </div>
             </div>
         </div>
-
         <div class="tab-pane" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
             <div class="container">
                 <div class="row">
@@ -316,7 +328,6 @@
                 </div>
             </div>
         </div>
-
         <div class="tab-pane" id="testing" role="tabpanel" aria-labelledby="testing-tab">
             <div class="container border border-primary mt-2">
                 <div class="row justify-content-around">
@@ -446,8 +457,87 @@
                 </div>
             </div>
         </div>
+        <div class="tab-pane" id="less" role="tabpanel" aria-labelledby="less-tab">
+            <div class="wrapper">
+                <nav class="mynav">
+                    <button class="mynav__theme">Change theme</button>
+                    <ul class="mynav__menu">
+                        <li class="mynav__item"><a href="#" class="mynav__link">Home</a></li>
+                        <li class="mynav__item"><a href="#" class="mynav__link">About</a></li>
+                        <li class="mynav__item"><a href="#" class="mynav__link">Items</a></li>
+                        <li class="mynav__item"><a href="#" class="mynav__link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <section class="main">
+                    <div class="main__content">
+                        <div class="main__tile main__tile--danger">
+                            <div class="main__header">Product 1</div>
+                            <ul class="main__features">
+                                <li class="main__item">Feature 1<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 2<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 3<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 4</li>
+                                <li class="main__item">Feature 5</li>
+                            </ul>
+
+                            <div class="main__footer">
+                                <button class="main__button main__button--danger">Click on me!</button>
+                            </div>
+                        </div>
+
+                        <div class="main__tile main__tile--warning">
+                            <div class="main__header">Product 2</div>
+                            <ul class="main__features">
+                                <li class="main__item">Feature 1<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 2</li>
+                                <li class="main__item">Feature 3<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 4<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 5</li>
+                            </ul>
+
+                            <div class="main__footer">
+                                <button class="main__button main__button--warning">Click on me!</button>
+                            </div>
+                        </div>
+
+                        <div class="main__tile main__tile--primary">
+                            <div class="main__header">Product 3</div>
+                            <ul class="main__features">
+                                <li class="main__item">Feature 1</li>
+                                <li class="main__item">Feature 2<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 3<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 4<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 5</li>
+                            </ul>
+
+                            <div class="main__footer">
+                                <button class="main__button main__button--primary">Click on me!</button>
+                            </div>
+                        </div>
+
+                        <div class="main__tile main__tile--success">
+                            <div class="main__header">Product 4</div>
+                            <ul class="main__features">
+                                <li class="main__item">Feature 1<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 2</li>
+                                <li class="main__item">Feature 3</li>
+                                <li class="main__item">Feature 4<span class="main__plus">+</span></li>
+                                <li class="main__item">Feature 5<span class="main__plus">+</span></li>
+                            </ul>
+
+                            <div class="main__footer">
+                                <button class="main__button main__button--success">Click on me!</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
     </div>
 </div>
+
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -513,6 +603,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="node_modules/less/dist/less.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 </html>
